@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="restaurant.jpg" type="image/jpg"> 
+    <!-- the above adds a logo to the Top in the name section -->
+    <title>Zwiggy Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal css */
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(127, 108, 108);
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align everything */
+        }
+        .container{
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto; /* Center the container */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        .Heading{
+            text-align: center;
+            text-decoration: dotted;
+            margin: 20px;
+        }
+        h2{
+            text-align:center;
+        }
+        .Menu-table{
+            width: 80%;
+            margin: 20px auto; /* Center the table and makes it responsive also */
+        }
+        .Menu-table th{
+            background-color:rgb(179, 131, 131) ;
+            border: 1px solid;
+            border-color: black;
+        }
+        .Menu-table tr, .Menu-table td{
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+        }
+        .ImgContainer{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ImgContainer img{
+            max-width: 100%; /* Make the image responsive */
+            border-radius: 8px;
+            box-shadow: 0 4px 4px rgb(47, 44, 44);
+        }
+        .contactus{
+            margin-bottom: 20px;
+        }
+        .contactus label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contactus input[type="text"],
+        .contactus input[type="email"],
+        .contactus textarea{
+            width: 80%;
+            max-width: 500px; /* Limit the maximum width */
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin: 0 auto; /* Center the inputs */
+            display: block; /* Stack the inputs */
+        }
+        .contactus textarea{
+            height: 100px;
+        }
+        .contactus input[type="submit"]{
+            border: 1px solid blue;
+            border-radius: 20px;
+            padding: 3px 10px;
+            background-color: burlywood;
+            display: block; /* Stack the button */
+            margin: 0 auto; /* Center the button */
+        }
+        .contactus input[type="submit"]:hover{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- inline css -->
+        <div class="Heading" style="color: blue;">
+            <h1>Zwiggy Eats</h1>
+            <p>We Nurture Your Meal</p>
+        </div>
+
+        <h2>Our Menu</h2>
+
+        <table class="Menu-table">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Lasagna</td>
+            <td>$65</td>
+            <td>Properly busted cheese</td>
+        </tr>
+        <tr>
+            <td>Tacos</td>
+            <td>$15</td>
+            <td>Crunchy and Munchy</td>
+        </tr>
+        </table>
+
+        <div class="ImgContainer">
+            <img src="restaurant.jpg" alt="Restaurant Image">
+        </div>
+
+        <h2>Contact Us </h2>
+        <form class="contactus" action="contact">
+            <label for="name" style="font-size:30px;">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email" style="font-size:30px;">Email: </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message" style="font-size:30px;">Message: </label>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" style="font-size:30px;"value="submit">
+        </form>
+    </div>
+</body>
+</html>
