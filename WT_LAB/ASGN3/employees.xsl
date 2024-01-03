@@ -17,7 +17,8 @@
           }
 
           th {
-            background-color: #f2f2f2;
+            background-color: #00FF00; /* Green color */
+            color: #ffffff; /* White text */
           }
         </style>
       </head>
