@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE employees SYSTEM "employees.dtd">
+<!DOCTYPE employees [
+  <!ELEMENT employees (employee+)>
+  <!ELEMENT employee (id, name, department, position)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT department (#PCDATA)>
+  <!ELEMENT position (#PCDATA)>
+]>
 <employees>
   <employee>
     <id>1</id>
@@ -13,5 +20,34 @@
     <department>HR</department>
     <position>HR Manager</position>
   </employee>
-  <!-- Add more employee entries as needed -->
+  <employee>
+    <id>3</id>
+    <name>Bob Johnson</name>
+    <department>Finance</department>
+    <position>Financial Analyst</position>
+  </employee>
+  <employee>
+    <id>4</id>
+    <name>Alice Brown</name>
+    <department>Marketing</department>
+    <position>Marketing Specialist</position>
+  </employee>
+  <employee>
+    <id>5</id>
+    <name>Chris Wilson</name>
+    <department>Operations</department>
+    <position>Operations Manager</position>
+  </employee>
+  <employee>
+    <id>6</id>
+    <name>Eva Miller</name>
+    <department>Sales</department>
+    <position>Sales Representative</position>
+  </employee>
+  <employee>
+    <id>7</id>
+    <name>Mike Turner</name>
+    <department>IT</department>
+    <position>System Administrator</position>
+  </employee>
 </employees>
