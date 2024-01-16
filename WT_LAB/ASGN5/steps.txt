@@ -10,6 +10,8 @@ https://chat.openai.com/share/006dcc56-3530-4ff9-90e8-21bca23871ec
 3 sudo systemctl start tomcat9
 
    now go to the cd Documents then
+// if webapps is not shown run this command
+//sudo mkdir -p /usr/share/tomcat/webapps/your-web-app
 4 sudo cp displayStudents.jsp /var/lib/tomcat9/webapps/your-web-app-name/
 5 sudo cp mysql-connector-java-8.0.33.jar /usr/share/tomcat9/lib/
 6 sudo systemctl restart tomcat9
