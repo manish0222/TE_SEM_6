@@ -1,6 +1,7 @@
 #include <bits/stdc++.h> 
 using namespace std; 
-  
+                                                 // TC   0(N^2)
+                                                 // SC   0(1)  no extra space is required
 // Function for Selection sort 
 void selectionSort(int arr[], int n) 
 { 
