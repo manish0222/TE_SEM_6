@@ -1,3 +1,8 @@
 use this link to learn
 1) https://www.youtube.com/watch?v=rUeL8kZbjPI
 2)use the given above code
+3)  File   ->  new Apex class  ->> Name is class Student
+4) Paste code in folder
+5) ctrl s
+6) ctrl e
+if it run tick only debug in bottom
