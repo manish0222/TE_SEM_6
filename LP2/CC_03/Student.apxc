@@ -1,0 +1,37 @@
+public class Student {
+    public static void main(){
+        // Declare variables
+        Integer age = 10;
+        String name = 'John';
+        Boolean isActive = true;
+        
+        // Print variables to the debug log
+        System.debug('Number: ' + age);
+        System.debug('Name: ' + name);
+        System.debug('Active: ' + isActive);
+        
+        if (age >= 18) {
+            System.debug('You are an adult.');
+        } else {
+            System.debug('You are a minor.');
+        }
+        
+        // Example usage
+        Integer[] numbers = new Integer[]{5, 10, 15, 20, 25};
+        Integer index = linearSearch(numbers, 15);
+        if (index != -1) {
+            System.debug('Element found at index: ' + index);
+        } else {
+            System.debug('Element not found.');
+        }
+    }
+    
+    public static Integer linearSearch(Integer[] arr, Integer target) {
+        for (Integer i = 0; i < arr.size(); i++) {
+            if (arr[i] == target) {
+                return i; // Return the index of the target element
+            }
+        }
+        return -1; // Return -1 if target element not found
+    }
+}
