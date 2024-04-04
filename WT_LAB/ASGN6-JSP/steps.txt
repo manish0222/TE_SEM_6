@@ -1,0 +1,20 @@
+steps
+https://chat.openai.com/share/006dcc56-3530-4ff9-90e8-21bca23871ec
+
+1 copy jsp and jar in document folder 
+2 install tomcat as above link
+   start mysql and then create database db123
+   then create a table students_info
+   insert data
+        insert into students_info value (1,' kan gus  ',' us ','to ','try')
+3 sudo systemctl start tomcat9
+
+   now go to the cd Documents then
+// if webapps is not shown run this command
+//sudo mkdir -p /usr/share/tomcat/webapps/your-web-app
+4 sudo cp displayStudents.jsp /var/lib/tomcat9/webapps/your-web-app-name/
+5 sudo cp mysql-connector-java-8.0.33.jar /usr/share/tomcat9/lib/
+6 sudo systemctl restart tomcat9
+7 sudo systemctl stop tomcat9 // to stop the one
+8 http://localhost:8080/your-web-app-name/displayStudents.jsp run this in browser
+refer this end to end
