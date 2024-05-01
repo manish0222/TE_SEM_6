@@ -1,0 +1,1 @@
+Stemming and lemmatization are different techniques used ran better to reduce words to their root form, but they produce varying results. Lemmatization is better than stemming
