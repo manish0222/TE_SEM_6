@@ -1,0 +1,44 @@
+public class asgn9 {
+//reate following application in SalesForce.com using Apex Programming Language: 
+//i.  Mathematical Calculator 
+//ii.  Generate student mark sheet 
+    public void add(Integer x,Integer y){
+        Integer t=x+y;
+        System.debug('The sum of '+x+' '+y+' is  '+t);
+    }
+    public void sub(Integer x,Integer y){
+        Integer t=x-y;
+        System.debug('The sub of '+x+' '+y+' is  '+t);
+    }
+    public void mul(Integer x,Integer y){
+        Decimal t=x*y;
+        System.debug('The sub of '+x+' '+y+' is  '+t);
+    }
+    public void div(Integer x,Integer y){
+        if(y==0){
+            System.debug('The div by 0 error');
+        }
+        else{
+            Decimal t=x*y;
+            System.debug('The sub of '+x+' '+y+' is  '+t);
+        }
+    }
+    public void power(Integer x,Integer y){
+        Decimal t=Math.pow(x,y);
+        System.debug('The power of '+x+' '+y+' is  '+t);
+    }
+    public void srt(Integer x){
+        Decimal t=Math.sqrt(x);
+        System.debug('The srt of '+x+' is  '+t);
+    }
+}
+//
+asgn9 obj =new asgn9();
+obj.add(12,23);
+obj.sub(12,23);
+obj.mul(12,23);
+obj.div(12,0);
+obj.div(12,24);
+obj.power(3,4);
+obj.srt(8);
+//
