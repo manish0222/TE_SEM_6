@@ -19,7 +19,6 @@ public:
         context["battery"] = {{"size", "4000 mAh"}, {"price", "$80"},{"battery","A rechargeable battery for powering the device"}};
         context["current_context"] = {{"context", "None"}}; // Initialize current context to None
     }
-
     void handleUserInput(const string& userInput) {  
 
         // Check if user input contains a keyword from context
