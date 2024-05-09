@@ -1,0 +1,33 @@
+//class
+public class asgn12 {
+//CC: Create an application of currency converter in SalesForce.com using Apex Programming Language
+    public Decimal c1 {get;set;}
+    public Decimal c2 {get;set;}
+    public Decimal f {get;set;}
+    public void convert(){
+        c2=c1*f;
+        //return null;
+    }
+}
+//visual force page
+<apex:page controller="asgn12" sidebar="false">
+    <apex:form>
+        <apex:pageBlock title="Currency Converter">
+            <apex:pageBlockSection columns="1" collapsible="false" title="">
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel> Currency 1 </apex:outputLabel>
+                    <apex:inputText value="{!c1}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel> fctor  </apex:outputLabel>
+                    <apex:inputText value="{!f}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel> C2  </apex:outputLabel>
+                    <apex:inputText value="{!c2}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:commandButton value="Convert" action="{!convert}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
