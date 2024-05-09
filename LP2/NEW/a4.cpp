@@ -46,6 +46,7 @@ int spanningTree(int V, vector<vector<int>> adj[]){
 
     for (auto edge : mst){
         if(edge[0]!=-1 or edge[1]!=-1) cout<<edge[0]<<"-"<<edge[1]<<endl; 
+        
     }
 
     return sum;

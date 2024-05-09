@@ -137,8 +137,8 @@ public:
                }
                if(seen.count(tot)==0 && tot>=0 && tot<=jug1+jug2)
                {
-                 seen.insert(tot);
-                 q.push(tot);
+                 seen.insert(tot);//imp
+                 q.push(tot);//imp
                }
             }
         }
