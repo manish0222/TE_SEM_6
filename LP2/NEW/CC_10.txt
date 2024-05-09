@@ -1,0 +1,24 @@
+//Create following application in SalesForce.com using Apex 
+//Programming Language: 
+//To find greatest among three numbers 
+public class asgn10 {
+    public void greater(Integer x,Integer y,Integer c){
+        System.debug('Numbers are'+x+' '+y+' '+c);
+        if(x==y && y==c){
+            System.debug('greatest is'+x);
+        }
+        else if(x>y && x>c){
+            System.debug('greatest is '+x);
+        }
+        else if(y>x && y>c){
+            System.debug('greatest is '+y);
+        }
+        else{
+            System.debug('greatest is '+c);
+        }
+    }
+}
+//
+asgn10 obj =new asgn10();
+obj.greater(5,4,5);
+//
