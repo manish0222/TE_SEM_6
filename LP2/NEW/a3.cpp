@@ -32,7 +32,7 @@ public:
         visit.resize(n,false);
         priority_queue<vertex,vector<vertex>,Comp> p;
         p.push(vertex(src,0));
-        distance[src]=0;
+        distance[src]=0;   //imp
         while(p.empty()==false){
             vertex u=p.top();p.pop();
             if(visit[u.id]) continue;
